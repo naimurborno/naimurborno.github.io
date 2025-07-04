@@ -1,219 +1,615 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Md. Naimur Asif Borno - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    :root {
-      --bg-color: #f9f9f9;
-      --text-color: #1e1e1e;
-      --header-bg: #1a1a1a;
-      --footer-bg: #efefef;
-      --section-alt: #f1f1f1;
-    }
-    body.dark {
-      --bg-color: #121212;
-      --text-color: #f1f1f1;
-      --header-bg: #222;
-      --footer-bg: #1e1e1e;
-      --section-alt: #1a1a1a;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      transition: all 0.3s ease;
-    }
-    header {
-      background-color: var(--header-bg);
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      position: relative;
-    }
-    nav {
-      background-color: var(--footer-bg);
-      padding: 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: var(--text-color);
-      text-decoration: none;
-      font-weight: 600;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .toggle-btn {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      background: none;
-      border: 2px solid white;
-      color: white;
-      padding: 0.4rem 0.8rem;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-top: 1rem;
-      border: 4px solid white;
-    }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    section:nth-child(even) {
-      background-color: var(--section-alt);
-    }
-    h1, h2, h3 {
-      color: var(--text-color);
-    }
-    ul {
-      list-style: square;
-      padding-left: 1.5rem;
-    }
-    a {
-      color: #0077cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .highlight {
-      font-weight: bold;
-    }
-    .download-links {
-      margin-top: 1rem;
-      text-align: center;
-    }
-    .download-links a {
-      margin: 0 10px;
-      padding: 0.5rem 1rem;
-      background-color: #0077cc;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-    .download-links a:hover {
-      background-color: #005fa3;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background-color: var(--footer-bg);
-      font-size: 0.9rem;
-      color: #555;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD. Naimur Asif Borno | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .navbar {
+            background-color: var(--secondary-color);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: white;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 5rem 0;
+            margin-bottom: 2rem;
+        }
+        
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section {
+            padding: 3rem 0;
+            background-color: white;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .section-title {
+            color: var(--secondary-color);
+            position: relative;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 6px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: var(--primary-color);
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-bottom: 20px;
+        }
+        
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            border: 2px solid white;
+        }
+        
+        .timeline-date {
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+        
+        .skill-item {
+            margin-bottom: 15px;
+        }
+        
+        .skill-name {
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        .progress {
+            height: 8px;
+            border-radius: 4px;
+        }
+        
+        .publication-card {
+            border-left: 3px solid var(--primary-color);
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+        
+        .publication-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .pdf-preview {
+            height: 200px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        
+        .pdf-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 2rem 0;
+        }
+        
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        .interest-item {
+            display: inline-block;
+            margin: 5px;
+            padding: 8px 15px;
+            background-color: var(--light-color);
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 3rem 0;
+            }
+            
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Theme</button>
-    <h1>Md. Naimur Asif Borno</h1>
-    <p>B.Sc. in Mechatronics Engineering | Rajshahi University of Engineering and Technology</p>
-    <p>
-      📧 <a href="mailto:naimur.ruet@gmail.com">naimur.ruet@gmail.com</a> |
-      <a href="https://linkedin.com/in/naimurborno">LinkedIn</a> |
-      <a href="https://github.com/naimurborno">GitHub</a>
-    </p>
-    <img src="pdfs/borno.jpg" alt="Profile Photo" class="profile-pic" />
-  </header>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">MD. Naimur Asif Borno</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#research">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#publications">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <nav>
-    <a href="#interests">Research Interests</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#publications">Publications</a>
-    <a href="#skills">Skills</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#awards">Awards</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <!-- Hero Section -->
+    <section class="hero text-center">
+        <div class="container">
+            <img src="profile.jpg" alt="MD. Naimur Asif Borno" class="profile-img rounded-circle mb-4">
+            <h1 class="display-4 fw-bold mb-3">MD. Naimur Asif Borno</h1>
+            <p class="lead mb-4">Mechatronics Engineer | Researcher in AI & Machine Learning</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="https://linkedin.com/in/naimurborno" class="btn btn-light btn-lg" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/naimurborno" class="btn btn-light btn-lg" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="Main_CV (8).pdf" class="btn btn-outline-light btn-lg" target="_blank">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+            </div>
+        </div>
+    </section>
 
-  <div class="download-links">
-    <a href="pdfs/Naimur_CV.pdf" target="_blank">Download CV (PDF)</a>
-    <a href="pdfs/PerceptDiff_Paper.pdf" target="_blank">Percept-Diff Paper</a>
-    <a href="pdfs/LatentContinualLearning_Paper.pdf" target="_blank">Continual Learning Paper</a>
-    <a href="pdfs/LoRAEyeDiagnosis_Paper.pdf" target="_blank">LoRA Transformer Paper</a>
-  </div>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="lead">I am a passionate researcher and mechatronics engineer with expertise in artificial intelligence, machine learning, and computer vision.</p>
+                    <p>My research focuses on diffusion models, image editing & inpainting, vision transformers, medical image generation, and continual learning. I have experience working with international research teams and publishing in top-tier conferences.</p>
+                    <div class="mt-4">
+                        <h5 class="mb-3">Contact Information</h5>
+                        <p><i class="fas fa-phone me-2"></i> +8801860460298</p>
+                        <p><i class="fas fa-envelope me-2"></i> naimur.ruet@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> Rajshahi, Bangladesh</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h5 class="mb-3">Research Interests</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-chevron-right me-2 text-primary"></i> Diffusion Models</li>
+                        <li><i class="fas fa-chevron-right me-2 text-primary"></i> Image Editing & Inpainting with Illusions or Structure Guidance</li>
+                        <li><i class="fas fa-chevron-right me-2 text-primary"></i> Vision Transformers & Attention Mechanisms</li>
+                        <li><i class="fas fa-chevron-right me-2 text-primary"></i> Image-to-Image Translation</li>
+                        <li><i class="fas fa-chevron-right me-2 text-primary"></i> Medical Image Generation & Classification</li>
+                        <li><i class="fas fa-chevron-right me-2 text-primary"></i> Continual Learning & Knowledge Distillation</li>
+                    </ul>
+                    <div class="mt-4">
+                        <h5 class="mb-3">Language Proficiency</h5>
+                        <p><strong>IELTS Academic:</strong> Overall Band Score 7</p>
+                        <p>Listening: 7.5, Reading: 7, Writing: 6.5, Speaking: 6</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="education">
-  <h2>Education</h2>
-  <p>B.Sc. in Mechatronics Engineering, RUET (2019–2024)<br />CGPA: 3.44/4.00 (Last 4 semesters: 3.64)</p>
-</section>
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Graduation: May 2025</div>
+                    <h4>Bachelor of Science in Mechatronics Engineering</h4>
+                    <h5>Rajshahi University of Engineering and Technology</h5>
+                    <p>CGPA: 3.44/4.00</p>
+                    <p>Last 4 semester avg. CGPA: 3.64/4.00</p>
+                </div>
+            </div>
+            
+            <h3 class="mt-5 mb-4">Specialized Courses</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-certificate me-2 text-primary"></i> Exploratory Data Analysis for Machine Learning (Coursera)</li>
+                        <li><i class="fas fa-certificate me-2 text-primary"></i> Introduction to TensorFlow for AI, ML and Deep Learning (Coursera)</li>
+                        <li><i class="fas fa-certificate me-2 text-primary"></i> Statistics for Data Science with Python (Coursera)</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-certificate me-2 text-primary"></i> Neural Networks and Deep Learning (DeepLearning.ai)</li>
+                        <li><i class="fas fa-certificate me-2 text-primary"></i> Convolutional Neural Networks in TensorFlow (DeepLearning.ai)</li>
+                        <li><i class="fas fa-certificate me-2 text-primary"></i> Custom Models, Layers and Loss Functions with TensorFlow (DeepLearning.ai)</li>
+                        <li><i class="fas fa-certificate me-2 text-primary"></i> Generative AI (Coursera)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="publications">
-  <h2>Publications</h2>
-  <ul>
-    <li><strong>Percept-Diff</strong>: <a href="https://doi.org/10.1109/3ict64318.2024.10824425">IEEE 3ICT 2024</a></li>
-    <li>Latent-Based Continual Learning with U-Net – FGCS (Under Review)</li>
-    <li>LoRA Transformer for Eye Diagnosis – KBS (Under Review)</li>
-    <li>Surface Anomaly Detection via ViT – IEOM 2023 (<a href="https://doi.org/10.46254/BA06.20230101">Paper</a>)</li>
-  </ul>
-</section>
+    <!-- Research Experience Section -->
+    <section id="research" class="section">
+        <div class="container">
+            <h2 class="section-title">Research Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Current</div>
+                    <h4>Research Assistant</h4>
+                    <h5>The University of Queensland, Australia</h5>
+                    <p>Supervisor: Dr. Mohammad Ali Moni</p>
+                    <p>Faculty of Health, Medicine and Behavioural Sciences</p>
+                    <h6 class="mt-3">Research Topics:</h6>
+                    <ul>
+                        <li>Developing a frequency-aware diffusion framework that fuses multi-image frequency components and injects prompt-based attention maps for controllable, structure-style-semantic disentangled image synthesis (Targeted Venue AAAI, 2025)</li>
+                        <li>Latent-Based Continual Learning with Dual-Layered Distillation and a Streamlined U-Net for Efficient Text-to-Image Generation (Manuscript Under Review)</li>
+                        <li>Decentralized LoRA Augmented Transformer with Context-aware Multi-scale Feature Learning for Secured Eye Diagnosis (Manuscript Under Review)</li>
+                    </ul>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2024</div>
+                    <h4>Research Assistant</h4>
+                    <h5>University of Aizu, Japan</h5>
+                    <p>Supervisor: Jungpli Shin, PhD</p>
+                    <p>Advance Machine Intelligence Research Lab (<a href="https://amirl.org/" target="_blank">https://amirl.org/</a>)</p>
+                    <h6 class="mt-3">Research Topic:</h6>
+                    <ul>
+                        <li>Percept-Diff: Innovations in Stable Diffusion for High-Fidelity IHC Image Generation in HER2 Breast Cancer Incorporating Perceptual Loss</li>
+                        <li>Published on 2024 International Conference on Innovation and Intelligence for Informatics, Computing, and Technologies (3ICT)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <p><strong>Languages:</strong> Python, C++, Java<br />
-  <strong>Libraries:</strong> Scikit-learn, Pandas, NumPy, Matplotlib, OpenCV, Diffusers, Transformers<br />
-  <strong>Tools:</strong> Git, LaTeX, AWS, GCP, FastAPI, Streamlit<br />
-  <strong>Domains:</strong> Generative AI, Vision Transformers, CNNs, Object Detection</p>
-</section>
+    <!-- Professional Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Jan 2023 – Mar 2023</div>
+                    <h4>Data Analyst And Business Analytics Intern</h4>
+                    <h5>The Sparks Foundation (Remote), Singapore</h5>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Jun 2022 – Aug 2022</div>
+                    <h4>Intern</h4>
+                    <h5>Forbs Marshall, Dhaka, Bangladesh</h5>
+                </div>
+            </div>
+            
+            <h3 class="mt-5 mb-4">Awards & Honors</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-trophy me-2 text-warning"></i> <strong>Face The Case 3.0</strong> - IEEE CUET Student Branch (Top 10, 2023)</li>
+                        <li><i class="fas fa-trophy me-2 text-warning"></i> <strong>Cognizent 2.0</strong> - Ruet, IPE Club (Top 8, 2023)</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-certificate me-2 text-primary"></i> <strong>Internship Completion</strong> - Forbs Marshall (2023)</li>
+                        <li><i class="fas fa-certificate me-2 text-primary"></i> <strong>Data Science and Business Analytics Internship Completion</strong> - The Sparks Foundation (2023)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="certifications">
-  <h2>Certifications</h2>
-  <ul>
-    <li><a href="https://www.coursera.org/account/accomplishments/certificate/R7FAMG5HTKAM">Exploratory Data Analysis for ML</a></li>
-    <li><a href="https://www.coursera.org/account/accomplishments/certificate/LD493QY6G6AR">Intro to TensorFlow</a></li>
-    <li><a href="https://www.credly.com/badges/17e74679-e540-4454-8501-2dcf9e3806ef/linked_in_profile">Statistics with Python</a></li>
-    <li><a href="https://www.coursera.org/account/accomplishments/certificate/N2FT776698NV">Neural Networks</a></li>
-    <li><a href="https://www.coursera.org/account/accomplishments/certificate/MBPWL76SPTCL">CNNs in TensorFlow</a></li>
-    <li><a href="https://www.coursera.org/account/accomplishments/certificate/ANXGK9">Custom Models in TensorFlow</a></li>
-  </ul>
-</section>
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+        <div class="container">
+            <h2 class="section-title">Research Publications</h2>
+            
+            <div class="row">
+                <!-- Publication 1 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 publication-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Latent-Based Continual Learning with Dual-Layered Distillation and a Streamlined U-Net for Efficient Text-to-Image Generation</h5>
+                            <p class="card-text"><small class="text-muted">Borno, M.N.A., Shovon, M.S.H., Al-Moisheer, A.S. and Moni, M.A., 2025</small></p>
+                            <p class="card-text">Under review at Future Generation Computer Systems</p>
+                            <div class="pdf-preview">
+                                <!-- Replace with actual PDF preview image -->
+                                <img src="publication1-preview.jpg" alt="Publication Preview" class="img-fluid">
+                            </div>
+                            <a href="publication1.pdf" class="btn btn-primary mt-2" target="_blank">View PDF</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Publication 2 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 publication-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Decentralized LoRA Augmented Transformer with Context-aware Multi-scale Feature Learning for Secured Eye Diagnosis</h5>
+                            <p class="card-text"><small class="text-muted">Borno, M.N.A., Shovon, M.S.H., Sikder, M.D., Rimi, I.F., Alahmadi, T.J. and Moni, M.A., 2025</small></p>
+                            <p class="card-text">Under review at Knowledge-Based Systems</p>
+                            <div class="pdf-preview">
+                                <img src="publication2-preview.jpg" alt="Publication Preview" class="img-fluid">
+                            </div>
+                            <a href="publication2.pdf" class="btn btn-primary mt-2" target="_blank">View PDF</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Publication 3 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 publication-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Percept-Diff: Innovations in Stable Diffusion for High-Fidelity IHC Image Generation in HER2 Breast Cancer Incorporating Perceptual Loss</h5>
+                            <p class="card-text"><small class="text-muted">M. N. A. Borno, M. T. Raihan, A. Ahmed, M. S. H. Shovon, J. Shin and M. F. Mridha, 2024</small></p>
+                            <p class="card-text">2024 International Conference on Innovation and Intelligence for Informatics, Computing, and Technologies (3ICT), Sakhir, Bahrain, pp. 520-526</p>
+                            <div class="pdf-preview">
+                                <img src="publication3-preview.jpg" alt="Publication Preview" class="img-fluid">
+                            </div>
+                            <a href="https://doi.org/10.1109/3ict64318.2024.10824425" class="btn btn-primary mt-2" target="_blank">View Publication</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Publication 4 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 publication-card">
+                        <div class="card-body">
+                            <h5 class="card-title">The Categorization of Surface Irregularities Presents on the Hot-Rolled Steel Strip, Encompassing Six Distinct Types of Surface Anomalies, Achieved through the Implementation of Vision Transformer</h5>
+                            <p class="card-text"><small class="text-muted">Borno, N., Mazumder, D., and Ghosh, A., 2023</small></p>
+                            <p class="card-text">6th Industrial Engineering and Operations Management Bangladesh Conference</p>
+                            <div class="pdf-preview">
+                                <img src="publication4-preview.jpg" alt="Publication Preview" class="img-fluid">
+                            </div>
+                            <a href="https://doi.org/10.46254/B406.20230101" class="btn btn-primary mt-2" target="_blank">View Publication</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="awards">
-  <h2>Honors & Awards</h2>
-  <ul>
-    <li>Top 10 – Face The Case 3.0 (IEEE CUET)</li>
-    <li>Top 8 – Cognizent 2.0 (RUET IPE Club)</li>
-    <li>Internship Completion – Forbs Marshall & The Sparks Foundation</li>
-  </ul>
-</section>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Competencies</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="skill-item">
+                        <div class="skill-name">Programming Languages</div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" style="width: 90%"></div>
+                        </div>
+                        <small>Python, C++, Java</small>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-name">ML Libraries</div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" style="width: 85%"></div>
+                        </div>
+                        <small>Scikit-Learn, NumPy, Pandas, Matplotlib, Seaborn, Matlab</small>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-name">Cloud Technologies</div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" style="width: 80%"></div>
+                        </div>
+                        <small>AWS, Azure, GCP, Miflow, Fast Api, Streamlit</small>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="skill-item">
+                        <div class="skill-name">Computer Vision</div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" style="width: 88%"></div>
+                        </div>
+                        <small>Diffusers, Transformers, PIL, OpenCV, CNN, Generative AI, Object Detection, Segmentation</small>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-name">Tools & Others</div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" style="width: 85%"></div>
+                        </div>
+                        <small>Git, GitHub, LaTeX, Microsoft Office, Adobe Illustrator</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="contact">
-  <h2>Contact & References</h2>
-  <p><strong>Dr. Mohammad Ali Moni</strong><br />School of Health, University of Queensland<br /><a href="mailto:m.moni@uq.edu.au">m.moni@uq.edu.au</a></p>
-  <p><strong>Md. Faisal Rahman Badal</strong><br />Assistant Professor, RUET<br /><a href="mailto:faisalrahman@mte.ruet.ac.bd">faisalrahman@mte.ruet.ac.bd</a></p>
-</section>
+    <!-- Interests Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Activities & Interests</h2>
+            <div class="text-center">
+                <span class="interest-item"><i class="fas fa-plane me-1"></i> Traveling</span>
+                <span class="interest-item"><i class="fas fa-film me-1"></i> Movies</span>
+                <span class="interest-item"><i class="fas fa-music me-1"></i> Singing</span>
+                <span class="interest-item"><i class="fas fa-camera me-1"></i> Photography</span>
+                <span class="interest-item"><i class="fas fa-book me-1"></i> Books</span>
+            </div>
+        </div>
+    </section>
 
-  <footer id="contact">
-    &copy; 2025 Md. Naimur Asif Borno. Built with ❤️ for research & innovation.
-  </footer>
+    <!-- References Section -->
+    <section id="references" class="section">
+        <div class="container">
+            <h2 class="section-title">References</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. Mohammad Ali Moni</h5>
+                            <p class="card-text">School of Health and Rehabilitation Sciences<br>
+                            Faculty of Health, Medicine and Behavioural Sciences<br>
+                            The University of Queensland<br>
+                            308 Queen St, Brisbane City, QLD 4000, Queensland, Australia</p>
+                            <p class="card-text"><i class="fas fa-envelope me-1"></i> m.moni@uq.edu.au</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Md. Faisal Rahman Badal</h5>
+                            <p class="card-text">Assistant Professor<br>
+                            Department of Mechatronics Engineering<br>
+                            Rajshahi University of Engineering & Technology (RUET)<br>
+                            Rajshahi - 6204, Bangladesh</p>
+                            <p class="card-text"><i class="fas fa-envelope me-1"></i> faisalrahman@mte.ruet.ac.bd</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle('dark');
-    }
-  </script>
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <div class="p-4">
+                        <h4>Contact Information</h4>
+                        <p><i class="fas fa-phone me-2"></i> +8801860460298</p>
+                        <p><i class="fas fa-envelope me-2"></i> naimur.ruet@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> Rajshahi, Bangladesh</p>
+                        
+                        <div class="mt-4">
+                            <h4>Follow Me</h4>
+                            <div class="social-icons">
+                                <a href="https://linkedin.com/in/naimurborno" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/naimurborno" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2024 MD. Naimur Asif Borno. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/naimurborno" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/naimurborno" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
