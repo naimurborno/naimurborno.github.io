@@ -1,723 +1,722 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="google16690d4ae7ee90c1" />
-    <title>MD. Naimur Asif Borno | Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root {
-            --primary-color: #3498db;
-            --secondary-color: #2c3e50;
-            --accent-color: #e74c3c;
-            --light-color: #ecf0f1;
-            --dark-color: #2c3e50;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-        
-        .navbar {
-            background-color: var(--secondary-color);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .navbar-brand {
-            font-weight: 700;
-            color: white;
-        }
-        
-        .hero {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 5rem 0;
-            margin-bottom: 2rem;
-        }
-        
-        .profile-img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border: 5px solid white;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .section {
-            padding: 3rem 0;
-            background-color: white;
-            margin-bottom: 2rem;
-            border-radius: 5px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-        }
-        
-        .section-title {
-            color: var(--secondary-color);
-            position: relative;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        
-        .section-title:after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 50px;
-            height: 3px;
-            background-color: var(--primary-color);
-        }
-        
-        .timeline {
-            position: relative;
-            padding-left: 30px;
-        }
-        
-        .timeline:before {
-            content: '';
-            position: absolute;
-            left: 6px;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background-color: var(--primary-color);
-        }
-        
-        .timeline-item {
-            position: relative;
-            padding-bottom: 20px;
-        }
-        
-        .timeline-item:before {
-            content: '';
-            position: absolute;
-            left: -30px;
-            top: 5px;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background-color: var(--primary-color);
-            border: 2px solid white;
-        }
-        .gallery-item {
-        position: relative;
-        margin-bottom: 20px;
-        overflow: hidden;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        transition: transform 0.3s;
-        }
-        
-        .gallery-item:hover {
-            transform: translateY(-5px);
-        }
-        
-        .gallery-item img {
-            transition: transform 0.5s;
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-        }
-        
-        .gallery-item:hover img {
-            transform: scale(1.05);
-        }
-        
-        .gallery-caption {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0,0,0,0.7);
-            color: white;
-            padding: 10px;
-            text-align: center;
-            font-weight: 500;
-        }
-        
-        .timeline-date {
-            font-size: 0.9rem;
-            color: var(--accent-color);
-            font-weight: 600;
-        }
-        
-        .skill-item {
-            margin-bottom: 15px;
-        }
-        
-        .skill-name {
-            margin-bottom: 5px;
-            font-weight: 600;
-        }
-        
-        .progress {
-            height: 8px;
-            border-radius: 4px;
-        }
-        
-        .publication-card {
-            border-left: 3px solid var(--primary-color);
-            transition: all 0.3s ease;
-            margin-bottom: 20px;
-        }
-        
-        .publication-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-        
-        .pdf-preview {
-            height: 200px;
-            overflow: hidden;
-            border: 1px solid #ddd;
-            margin-bottom: 10px;
-        }
-        
-        .pdf-preview img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        footer {
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 2rem 0;
-        }
-        
-        .social-icons a {
-            color: white;
-            margin: 0 10px;
-            font-size: 1.5rem;
-            transition: all 0.3s ease;
-        }
-        
-        .social-icons a:hover {
-            color: var(--primary-color);
-            transform: translateY(-3px);
-        }
-        
-        .interest-item {
-            display: inline-block;
-            margin: 5px;
-            padding: 8px 15px;
-            background-color: var(--light-color);
-            border-radius: 20px;
-            font-size: 0.9rem;
-        }
-        
-        @media (max-width: 768px) {
-            .hero {
-                padding: 3rem 0;
-            }
-            
-            .profile-img {
-                width: 150px;
-                height: 150px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MD. Naimur Asif Borno | AI Researcher</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #06090f;
+      --bg2: #0d1117;
+      --bg3: #131a24;
+      --cyan: #00e5ff;
+      --gold: #ffd166;
+      --pink: #ff6b9d;
+      --white: #e8edf5;
+      --muted: #6b7a95;
+      --border: rgba(0,229,255,0.12);
+      --glow: 0 0 30px rgba(0,229,255,0.2);
+      --font-display: 'Syne', sans-serif;
+      --font-mono: 'IBM Plex Mono', monospace;
+      --font-body: 'DM Sans', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.7;
+      overflow-x: hidden;
+      cursor: none;
+    }
+
+    /* ── CUSTOM CURSOR ── */
+    #cursor { position:fixed; width:10px; height:10px; background:var(--cyan); border-radius:50%; pointer-events:none; z-index:9999; transition:transform .15s ease; mix-blend-mode:screen; }
+    #cursor-ring { position:fixed; width:36px; height:36px; border:1.5px solid rgba(0,229,255,.5); border-radius:50%; pointer-events:none; z-index:9998; transition:transform .35s ease, width .2s, height .2s; }
+    body:hover #cursor { transform:scale(1); }
+    a:hover ~ #cursor, button:hover ~ #cursor { transform:scale(2); }
+
+    /* ── CANVAS BACKGROUND ── */
+    #bg-canvas { position:fixed; top:0; left:0; width:100%; height:100%; z-index:0; opacity:.35; }
+
+    /* ── NOISE OVERLAY ── */
+    body::before {
+      content:''; position:fixed; inset:0; z-index:1; pointer-events:none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+      opacity:.025;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position:fixed; top:0; left:0; right:0; z-index:100;
+      padding:1.2rem 3rem;
+      display:flex; align-items:center; justify-content:space-between;
+      background:rgba(6,9,15,0.7);
+      backdrop-filter:blur(20px);
+      border-bottom:1px solid var(--border);
+      transition:all .3s;
+    }
+    .nav-logo { font-family:var(--font-display); font-weight:800; font-size:1.1rem; color:var(--cyan); letter-spacing:.04em; text-decoration:none; }
+    .nav-links { display:flex; gap:2rem; list-style:none; }
+    .nav-links a { font-family:var(--font-mono); font-size:.8rem; color:var(--muted); text-decoration:none; letter-spacing:.1em; text-transform:uppercase; transition:color .2s; position:relative; }
+    .nav-links a::after { content:''; position:absolute; bottom:-4px; left:0; width:0; height:1px; background:var(--cyan); transition:width .3s; }
+    .nav-links a:hover { color:var(--cyan); }
+    .nav-links a:hover::after { width:100%; }
+
+    /* ── MAIN WRAPPER ── */
+    main { position:relative; z-index:2; }
+
+    /* ── HERO ── */
+    #hero {
+      min-height:100vh; display:flex; align-items:center;
+      padding:8rem 3rem 4rem;
+      position:relative;
+    }
+    .hero-inner { max-width:1100px; margin:auto; width:100%; }
+    .hero-tag {
+      display:inline-flex; align-items:center; gap:.6rem;
+      font-family:var(--font-mono); font-size:.75rem; color:var(--cyan);
+      border:1px solid var(--border); border-radius:2rem;
+      padding:.35rem .9rem; margin-bottom:2rem;
+      animation: fadeUp .8s ease both;
+    }
+    .hero-tag .dot { width:7px; height:7px; background:var(--cyan); border-radius:50%; animation:pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.4;transform:scale(.8)} }
+
+    h1.hero-name {
+      font-family:var(--font-display); font-size:clamp(3rem,7vw,6.5rem);
+      font-weight:800; line-height:1.0; letter-spacing:-.02em;
+      animation: fadeUp .9s .1s ease both;
+    }
+    h1.hero-name .line1 { display:block; color:var(--white); }
+    h1.hero-name .line2 { display:block; color:transparent; -webkit-text-stroke:1.5px rgba(232,237,245,.4); }
+    h1.hero-name .accent { color:var(--cyan); }
+
+    .hero-sub {
+      margin-top:1.5rem; font-size:1.1rem; color:var(--muted); max-width:560px;
+      animation:fadeUp 1s .2s ease both;
+    }
+    .hero-sub strong { color:var(--white); }
+
+    .hero-btns {
+      display:flex; gap:1rem; flex-wrap:wrap; margin-top:2.5rem;
+      animation:fadeUp 1s .3s ease both;
+    }
+    .btn-primary {
+      background:var(--cyan); color:var(--bg); font-family:var(--font-mono);
+      font-size:.8rem; font-weight:500; letter-spacing:.08em;
+      padding:.8rem 1.8rem; border-radius:.4rem; border:none;
+      text-decoration:none; cursor:none; transition:all .25s;
+      display:inline-flex; align-items:center; gap:.5rem;
+    }
+    .btn-primary:hover { background:#00c8e0; transform:translateY(-2px); box-shadow:0 8px 30px rgba(0,229,255,.3); }
+    .btn-outline {
+      background:transparent; color:var(--white); font-family:var(--font-mono);
+      font-size:.8rem; letter-spacing:.08em; padding:.8rem 1.8rem;
+      border:1px solid var(--border); border-radius:.4rem;
+      text-decoration:none; cursor:none; transition:all .25s;
+      display:inline-flex; align-items:center; gap:.5rem;
+    }
+    .btn-outline:hover { border-color:var(--cyan); color:var(--cyan); transform:translateY(-2px); }
+
+    .hero-stats {
+      display:flex; gap:3rem; margin-top:4rem; flex-wrap:wrap;
+      animation:fadeUp 1s .4s ease both;
+    }
+    .stat-item { }
+    .stat-num { font-family:var(--font-display); font-size:2.2rem; font-weight:800; color:var(--cyan); display:block; }
+    .stat-label { font-family:var(--font-mono); font-size:.72rem; color:var(--muted); letter-spacing:.1em; text-transform:uppercase; }
+
+    .hero-scroll {
+      position:absolute; bottom:2.5rem; left:50%; transform:translateX(-50%);
+      display:flex; flex-direction:column; align-items:center; gap:.6rem;
+      font-family:var(--font-mono); font-size:.7rem; color:var(--muted); letter-spacing:.1em;
+      animation:fadeUp 1s .6s ease both;
+    }
+    .scroll-line { width:1px; height:60px; background:linear-gradient(to bottom, var(--muted), transparent); animation:scrollPulse 2s infinite; }
+    @keyframes scrollPulse { 0%{opacity:1;transform:scaleY(1) translateY(0)} 100%{opacity:0;transform:scaleY(.5) translateY(30px)} }
+
+    @keyframes fadeUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
+
+    /* ── SECTIONS ── */
+    section { padding:6rem 3rem; max-width:1100px; margin:auto; position:relative; }
+    .section-tag {
+      font-family:var(--font-mono); font-size:.72rem; color:var(--cyan);
+      letter-spacing:.15em; text-transform:uppercase; margin-bottom:1rem; display:block;
+    }
+    h2.section-title {
+      font-family:var(--font-display); font-size:clamp(2rem,4vw,3.5rem);
+      font-weight:800; line-height:1.1; margin-bottom:3rem;
+    }
+    .divider { width:100%; height:1px; background:var(--border); margin:0 3rem; max-width:calc(100% - 6rem); }
+
+    /* ── ABOUT ── */
+    .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start; }
+    .about-text p { color: #a0aec0; margin-bottom:1.2rem; font-size:1.05rem; }
+    .about-text p strong { color:var(--white); }
+    .info-list { list-style:none; margin-top:2rem; }
+    .info-list li { display:flex; align-items:center; gap:1rem; padding:.7rem 0; border-bottom:1px solid var(--border); font-size:.9rem; color:var(--muted); }
+    .info-list li i { color:var(--cyan); width:16px; }
+    .info-list li span { color:var(--white); }
+
+    .interests-grid { display:flex; flex-wrap:wrap; gap:.6rem; margin-top:2rem; }
+    .interest-tag {
+      font-family:var(--font-mono); font-size:.75rem; color:var(--cyan);
+      border:1px solid var(--border); border-radius:.3rem; padding:.3rem .8rem;
+      transition:all .2s;
+    }
+    .interest-tag:hover { background:rgba(0,229,255,.08); border-color:var(--cyan); }
+
+    .lang-card { background:var(--bg3); border:1px solid var(--border); border-radius:.8rem; padding:1.5rem; margin-top:2rem; }
+    .lang-title { font-family:var(--font-mono); font-size:.75rem; color:var(--muted); letter-spacing:.1em; text-transform:uppercase; margin-bottom:1rem; }
+    .lang-score { font-family:var(--font-display); font-size:3rem; font-weight:800; color:var(--gold); }
+    .lang-sub { font-size:.85rem; color:var(--muted); margin-top:.3rem; }
+
+    /* ── EDUCATION ── */
+    .edu-card {
+      background:var(--bg3); border:1px solid var(--border); border-radius:1rem;
+      padding:2rem; position:relative; overflow:hidden; transition:all .3s;
+    }
+    .edu-card::before { content:''; position:absolute; top:0; left:0; width:3px; height:100%; background:linear-gradient(to bottom, var(--cyan), var(--pink)); }
+    .edu-card:hover { border-color:rgba(0,229,255,.3); transform:translateY(-4px); box-shadow:var(--glow); }
+    .edu-year { font-family:var(--font-mono); font-size:.75rem; color:var(--cyan); margin-bottom:.5rem; }
+    .edu-degree { font-family:var(--font-display); font-size:1.3rem; font-weight:700; margin-bottom:.3rem; }
+    .edu-uni { color:var(--muted); font-size:.95rem; margin-bottom:1rem; }
+    .gpa-badge {
+      display:inline-flex; align-items:center; gap:.4rem;
+      background:rgba(255,209,102,.1); border:1px solid rgba(255,209,102,.25);
+      color:var(--gold); font-family:var(--font-mono); font-size:.8rem;
+      padding:.3rem .8rem; border-radius:.3rem;
+    }
+
+    .courses-grid { display:grid; grid-template-columns:1fr 1fr; gap:.8rem; margin-top:2.5rem; }
+    .course-item {
+      background:var(--bg3); border:1px solid var(--border); border-radius:.5rem;
+      padding:.8rem 1rem; font-size:.85rem; color:var(--muted);
+      display:flex; align-items:center; gap:.6rem; transition:all .2s;
+    }
+    .course-item:hover { border-color:var(--cyan); color:var(--white); }
+    .course-item i { color:var(--cyan); font-size:.75rem; }
+
+    /* ── RESEARCH ── */
+    .timeline { position:relative; }
+    .timeline::before { content:''; position:absolute; left:0; top:0; bottom:0; width:1px; background:linear-gradient(to bottom, var(--cyan), transparent); }
+    .timeline-item { padding-left:2.5rem; padding-bottom:3.5rem; position:relative; }
+    .timeline-item::before { content:''; position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:var(--bg); border:2px solid var(--cyan); box-shadow:0 0 12px var(--cyan); }
+    .t-date { font-family:var(--font-mono); font-size:.72rem; color:var(--cyan); letter-spacing:.1em; text-transform:uppercase; margin-bottom:.5rem; }
+    .t-title { font-family:var(--font-display); font-size:1.2rem; font-weight:700; margin-bottom:.2rem; }
+    .t-org { color:var(--gold); font-size:.9rem; font-weight:500; margin-bottom:.3rem; }
+    .t-supervisor { font-family:var(--font-mono); font-size:.78rem; color:var(--muted); margin-bottom:1rem; }
+    .t-topics { list-style:none; }
+    .t-topics li { font-size:.9rem; color:#a0aec0; padding:.4rem 0; padding-left:1.2rem; position:relative; }
+    .t-topics li::before { content:'▸'; position:absolute; left:0; color:var(--cyan); }
+
+    /* ── PUBLICATIONS ── */
+    .pub-grid { display:grid; gap:1.5rem; }
+    .pub-card {
+      background:var(--bg3); border:1px solid var(--border); border-radius:1rem;
+      padding:1.8rem; display:grid; grid-template-columns:auto 1fr; gap:1.5rem;
+      transition:all .3s; position:relative; overflow:hidden;
+    }
+    .pub-card::after { content:''; position:absolute; inset:0; background:linear-gradient(135deg, rgba(0,229,255,.04), transparent); opacity:0; transition:opacity .3s; }
+    .pub-card:hover { border-color:rgba(0,229,255,.35); transform:translateY(-4px); box-shadow:var(--glow); }
+    .pub-card:hover::after { opacity:1; }
+    .pub-num { font-family:var(--font-display); font-size:3rem; font-weight:800; color:var(--border); line-height:1; min-width:3rem; }
+    .pub-title { font-family:var(--font-display); font-size:1.05rem; font-weight:700; line-height:1.4; margin-bottom:.5rem; }
+    .pub-authors { font-family:var(--font-mono); font-size:.75rem; color:var(--muted); margin-bottom:.5rem; }
+    .pub-venue { font-size:.85rem; color:var(--gold); margin-bottom:.8rem; }
+    .pub-badge {
+      display:inline-flex; align-items:center; gap:.4rem;
+      font-family:var(--font-mono); font-size:.7rem; padding:.25rem .7rem;
+      border-radius:.25rem; margin-right:.5rem; margin-bottom:.5rem;
+    }
+    .badge-published { background:rgba(0,229,255,.1); color:var(--cyan); border:1px solid rgba(0,229,255,.2); }
+    .badge-review { background:rgba(255,209,102,.1); color:var(--gold); border:1px solid rgba(255,209,102,.2); }
+    .pub-link { font-family:var(--font-mono); font-size:.75rem; color:var(--cyan); text-decoration:none; border:1px solid var(--border); padding:.25rem .7rem; border-radius:.25rem; transition:all .2s; display:inline-flex; align-items:center; gap:.4rem; }
+    .pub-link:hover { border-color:var(--cyan); background:rgba(0,229,255,.08); }
+
+    /* ── SKILLS ── */
+    .skills-outer { display:grid; grid-template-columns:1fr 1fr; gap:3rem; }
+    .skill-group-title { font-family:var(--font-mono); font-size:.75rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase; margin-bottom:1.5rem; }
+    .skill-row { margin-bottom:1.4rem; }
+    .skill-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:.5rem; }
+    .skill-name { font-size:.92rem; font-weight:500; color:var(--white); }
+    .skill-pct { font-family:var(--font-mono); font-size:.75rem; color:var(--cyan); }
+    .skill-bar { height:3px; background:var(--border); border-radius:3px; overflow:hidden; }
+    .skill-fill { height:100%; border-radius:3px; background:linear-gradient(to right, var(--cyan), #7df9ff); width:0; transition:width 1.2s cubic-bezier(.16,1,.3,1); }
+    .tech-tags { display:flex; flex-wrap:wrap; gap:.5rem; margin-top:.8rem; }
+    .tech-tag { font-family:var(--font-mono); font-size:.72rem; color:var(--muted); background:var(--bg3); border:1px solid var(--border); border-radius:.25rem; padding:.2rem .6rem; }
+
+    /* ── AWARDS ── */
+    .awards-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(260px,1fr)); gap:1.2rem; }
+    .award-card { background:var(--bg3); border:1px solid var(--border); border-radius:.8rem; padding:1.3rem; transition:all .3s; }
+    .award-card:hover { border-color:rgba(255,209,102,.4); transform:translateY(-3px); }
+    .award-icon { font-size:1.5rem; margin-bottom:.8rem; }
+    .award-name { font-family:var(--font-display); font-weight:700; font-size:.95rem; margin-bottom:.3rem; }
+    .award-org { font-size:.82rem; color:var(--muted); }
+
+    /* ── CONTACT ── */
+    .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:4rem; }
+    .contact-info { display:flex; flex-direction:column; gap:1.2rem; }
+    .contact-item { display:flex; align-items:center; gap:1rem; padding:1rem 1.2rem; background:var(--bg3); border:1px solid var(--border); border-radius:.6rem; transition:all .2s; }
+    .contact-item:hover { border-color:var(--cyan); }
+    .contact-item i { color:var(--cyan); width:20px; font-size:1.1rem; }
+    .contact-item span { font-size:.9rem; color:var(--white); }
+    .social-row { display:flex; gap:1rem; margin-top:1.5rem; }
+    .social-btn { width:44px; height:44px; display:flex; align-items:center; justify-content:center; background:var(--bg3); border:1px solid var(--border); border-radius:.5rem; color:var(--muted); text-decoration:none; font-size:1.1rem; transition:all .25s; }
+    .social-btn:hover { border-color:var(--cyan); color:var(--cyan); transform:translateY(-3px); box-shadow:var(--glow); }
+
+    .contact-form { display:flex; flex-direction:column; gap:1rem; }
+    .form-group { position:relative; }
+    .form-group input, .form-group textarea {
+      width:100%; background:var(--bg3); border:1px solid var(--border); border-radius:.6rem;
+      color:var(--white); font-family:var(--font-body); font-size:.95rem;
+      padding:.9rem 1.1rem; outline:none; transition:border .2s; resize:none;
+    }
+    .form-group input:focus, .form-group textarea:focus { border-color:var(--cyan); }
+    .form-group input::placeholder, .form-group textarea::placeholder { color:var(--muted); }
+    .form-group textarea { height:120px; }
+    .btn-send {
+      background:var(--cyan); color:var(--bg); font-family:var(--font-mono); font-size:.8rem;
+      font-weight:600; letter-spacing:.1em; padding:.9rem 2rem; border:none; border-radius:.5rem;
+      cursor:none; transition:all .25s; align-self:flex-start;
+    }
+    .btn-send:hover { transform:translateY(-2px); box-shadow:0 8px 30px rgba(0,229,255,.35); }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align:center; padding:3rem; border-top:1px solid var(--border);
+      font-family:var(--font-mono); font-size:.78rem; color:var(--muted);
+      position:relative; z-index:2;
+    }
+    footer span { color:var(--cyan); }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal { opacity:0; transform:translateY(40px); transition:opacity .8s ease, transform .8s ease; }
+    .reveal.visible { opacity:1; transform:none; }
+    .reveal-delay-1 { transition-delay:.1s; }
+    .reveal-delay-2 { transition-delay:.2s; }
+    .reveal-delay-3 { transition-delay:.3s; }
+    .reveal-delay-4 { transition-delay:.4s; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width:900px) {
+      nav { padding:1rem 1.5rem; }
+      .nav-links { display:none; }
+      section { padding:4rem 1.5rem; }
+      #hero { padding:7rem 1.5rem 3rem; }
+      .about-grid, .contact-grid, .skills-outer, .courses-grid { grid-template-columns:1fr; gap:2rem; }
+      h1.hero-name { font-size:clamp(2.5rem,10vw,5rem); }
+    }
+
+    /* ── GLITCH ANIMATION for name ── */
+    .glitch { position:relative; }
+    .glitch::before, .glitch::after {
+      content:attr(data-text); position:absolute; top:0; left:0;
+      width:100%; height:100%; opacity:.8;
+    }
+    .glitch::before { color:var(--pink); animation:glitch1 4s infinite; clip-path:polygon(0 0,100% 0,100% 45%,0 45%); }
+    .glitch::after { color:var(--cyan); animation:glitch2 4s infinite; clip-path:polygon(0 55%,100% 55%,100% 100%,0 100%); }
+    @keyframes glitch1 { 0%,90%,100%{transform:none} 91%{transform:translate(-3px,1px)} 93%{transform:translate(3px,-1px)} 95%{transform:none} }
+    @keyframes glitch2 { 0%,85%,100%{transform:none} 86%{transform:translate(3px,2px)} 88%{transform:translate(-3px,-2px)} 90%{transform:none} }
+  </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">MD. Naimur Asif Borno</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#research">Research Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">professional Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#publications">Publications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <canvas id="bg-canvas"></canvas>
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
 
-    <!-- Hero Section -->
-    <section class="hero py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          
-          <!-- Left Side -->
-          <div class="col-md-6 text-center text-md-start">
-            <img src="pdfs/borno.jpg" alt="MD. Naimur Asif Borno" 
-                 class="profile-img rounded-circle mb-3" style="width:150px; height:150px;">
-            <h1 class="display-5 fw-bold">MD. Naimur Asif Borno</h1>
-            <p class="lead">Mechatronics Engineer | Researcher in Computer Vision, AI & Machine Learning</p>
+  <!-- NAV -->
+  <nav id="navbar">
+    <a class="nav-logo" href="#">BORNO<span style="color:var(--gold)">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" style="max-width:100%; padding-top:0; padding-bottom:0;">
+      <div class="hero-inner">
+        <div class="hero-tag"><span class="dot"></span> Open to PhD / Research Positions</div>
+        <h1 class="hero-name">
+          <span class="line1 glitch" data-text="Naimur Asif">Naimur Asif</span>
+          <span class="line2">Borno<span class="accent">.</span></span>
+        </h1>
+        <p class="hero-sub">
+          <strong>Mechatronics Engineer → AI Researcher.</strong> Working on diffusion models, continual learning &amp; medical image synthesis. Research Assistant @ <strong style="color:var(--gold)">University of Queensland</strong>.
+        </p>
+        <div class="hero-btns">
+          <a href="pdfs/CV_Naimur.pdf" class="btn-primary" target="_blank"><i class="fas fa-download"></i> Download CV</a>
+          <a href="https://scholar.google.com/citations?user=6UJCdmkAAAAJ&hl=en" class="btn-outline" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+          <a href="https://github.com/naimurborno" class="btn-outline" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://linkedin.com/in/naimurborno" class="btn-outline" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item"><span class="stat-num" data-target="4">0</span><span class="stat-label">Publications</span></div>
+          <div class="stat-item"><span class="stat-num" data-target="3">0</span><span class="stat-label">Institutions</span></div>
+          <div class="stat-item"><span class="stat-num" data-target="7" data-suffix="">0</span><span class="stat-label">IELTS Band</span></div>
+        </div>
+      </div>
+      <div class="hero-scroll">SCROLL<div class="scroll-line"></div></div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <span class="section-tag reveal">// 01. About</span>
+      <h2 class="section-title reveal">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a <strong>Mechatronics Engineer turned AI Researcher</strong>, specializing in generative models, medical imaging, and continual learning. I graduated from <strong>RUET, Bangladesh</strong> and currently work as a Research Assistant at the <strong>University of Queensland, Australia</strong>.</p>
+          <p>My work spans <strong>diffusion models, frequency-domain learning, knowledge distillation</strong>, and federated learning — with a focus on making generative systems efficient enough to run under real-world compute constraints.</p>
+          <p>I've collaborated across <strong>Australia, Japan, and Bangladesh</strong>, and I'm actively looking for PhD/MSc opportunities in Europe and North America where I can push this research further.</p>
+          <ul class="info-list">
+            <li><i class="fas fa-phone"></i><span>+880 1860-460298</span></li>
+            <li><i class="fas fa-envelope"></i><span>naimur.ruet@gmail.com</span></li>
+            <li><i class="fas fa-map-marker-alt"></i><span>Rajshahi, Bangladesh</span></li>
+          </ul>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <h4 style="font-family:var(--font-mono);font-size:.8rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.2rem;">Research Interests</h4>
+          <div class="interests-grid">
+            <span class="interest-tag">Diffusion Models</span>
+            <span class="interest-tag">Image Editing</span>
+            <span class="interest-tag">Inpainting</span>
+            <span class="interest-tag">Vision Transformers</span>
+            <span class="interest-tag">Img-to-Img Translation</span>
+            <span class="interest-tag">Medical Image Gen.</span>
+            <span class="interest-tag">Continual Learning</span>
+            <span class="interest-tag">Knowledge Distillation</span>
+            <span class="interest-tag">Federated Learning</span>
+            <span class="interest-tag">Frequency-Domain ML</span>
           </div>
-          
-          <!-- Right Side (Buttons in Grid) -->
-          <div class="col-md-6 text-center text-md-end">
-            <div class="row g-3 justify-content-center justify-content-md-end">
-              <div class="col-6 col-md-6">
-                <a href="https://linkedin.com/in/naimurborno" class="btn btn-light btn-lg w-100" target="_blank">
-                  <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-              </div>
-              <div class="col-6 col-md-6">
-                <a href="https://scholar.google.com/citations?user=6UJCdmkAAAAJ&hl=en" class="btn btn-light btn-lg w-100" target="_blank">
-                  <i class="fas fa-graduation-cap"></i> Scholar
-                </a>
-              </div>
-              <div class="col-6 col-md-6">
-                <a href="https://github.com/naimurborno" class="btn btn-light btn-lg w-100" target="_blank">
-                  <i class="fab fa-github"></i> GitHub
-                </a>
-              </div>
-              <div class="col-6 col-md-6">
-                <a href="pdfs/CV_Naimur.pdf" class="btn btn-outline-light btn-lg w-100" target="_blank">
-                  <i class="fas fa-download"></i> CV
-                </a>
-              </div>
+          <div class="lang-card">
+            <div class="lang-title">IELTS Academic Score</div>
+            <div class="lang-score">7.0</div>
+            <div class="lang-sub" style="color:var(--muted);font-size:.82rem;margin-top:.5rem;">
+              L: 7.5 &nbsp;·&nbsp; R: 7.0 &nbsp;·&nbsp; W: 6.5 &nbsp;·&nbsp; S: 6.0
             </div>
           </div>
-          
+          <div style="margin-top:2rem;">
+            <h4 style="font-family:var(--font-mono);font-size:.8rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:1rem;">Beyond Research</h4>
+            <div class="interests-grid">
+              <span class="interest-tag">✈ Traveling</span>
+              <span class="interest-tag">🎬 Movies</span>
+              <span class="interest-tag">🎤 Singing</span>
+              <span class="interest-tag">📷 Photography</span>
+              <span class="interest-tag">📚 Books</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="row">
-                <div class="col-lg-6">
-                    <p class="lead">I am a passionate researcher and mechatronics engineer with expertise in artificial intelligence, machine learning, and computer vision.</p>
-                    <p>My research focuses on diffusion models, image editing & inpainting, vision transformers, medical image generation, and continual learning. I have experience working with international research teams across Australia, Japan, and Bangladesh, where I have contributed to a range of projects in the fields of diffusion models, image editing, medical image analysis, and continual learning. These collaborations have strengthened my ability to conduct interdisciplinary research, adapt to diverse academic environments, and contribute meaningfully to ongoing projects in a globally connected research setting.</p>
-                    <div class="mt-4">
-                        <h5 class="mb-3">Contact Information</h5>
-                        <p><i class="fas fa-phone me-2"></i> +8801860460298</p>
-                        <p><i class="fas fa-envelope me-2"></i> naimur.ruet@gmail.com</p>
-                        <p><i class="fas fa-map-marker-alt me-2"></i> Rajshahi, Bangladesh</p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <h5 class="mb-3">Research Interests</h5>
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-chevron-right me-2 text-primary"></i> Diffusion Models</li>
-                        <li><i class="fas fa-chevron-right me-2 text-primary"></i> Image Editing & Inpainting with Illusions or Structure Guidance</li>
-                        <li><i class="fas fa-chevron-right me-2 text-primary"></i> Vision Transformers & Attention Mechanisms</li>
-                        <li><i class="fas fa-chevron-right me-2 text-primary"></i> Image-to-Image Translation</li>
-                        <li><i class="fas fa-chevron-right me-2 text-primary"></i> Medical Image Generation & Classification</li>
-                        <li><i class="fas fa-chevron-right me-2 text-primary"></i> Continual Learning & Knowledge Distillation</li>
-                    </ul>
-                    <div class="mt-4">
-                        <h5 class="mb-3">Language Proficiency</h5>
-                        <p><strong>IELTS Academic:</strong> Overall Band Score 7</p>
-                        <p>Listening: 7.5, Reading: 7, Writing: 6.5, Speaking: 6</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Education Section -->
-    <section id="education" class="section">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">Graduation: May 2024</div>
-                    <h4>Bachelor of Science in Mechatronics Engineering</h4>
-                    <h5>Rajshahi University of Engineering and Technology</h5>
-                    <p>CGPA: 3.44/4.00</p>
-                    <p>Last 4 semester avg. CGPA: 3.64/4.00</p>
-                </div>
-            </div>
-            
-            <h3 class="mt-5 mb-4">Specialized Courses</h3>
-            <div class="row">
-                <div class="col-md-6">
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-certificate me-2 text-primary"></i> Exploratory Data Analysis for Machine Learning (Coursera)</li>
-                        <li><i class="fas fa-certificate me-2 text-primary"></i> Introduction to TensorFlow for AI, ML and Deep Learning (Coursera)</li>
-                        <li><i class="fas fa-certificate me-2 text-primary"></i> Statistics for Data Science with Python (Coursera)</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-certificate me-2 text-primary"></i> Neural Networks and Deep Learning (DeepLearning.ai)</li>
-                        <li><i class="fas fa-certificate me-2 text-primary"></i> Convolutional Neural Networks in TensorFlow (DeepLearning.ai)</li>
-                        <li><i class="fas fa-certificate me-2 text-primary"></i> Custom Models, Layers and Loss Functions with TensorFlow (DeepLearning.ai)</li>
-                        <li><i class="fas fa-certificate me-2 text-primary"></i> Generative AI (Coursera)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="divider"></div>
 
-    <!-- Research Experience Section -->
-    <section id="research" class="section">
-        <div class="container">
-            <h2 class="section-title">Research Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">Current</div>
-                    <h4>Research Assistant</h4>
-                    <h5>The University of Queensland, Australia</h5>
-                    <p>Supervisor: Dr. Mohammad Ali Moni</p>
-                    <p>Faculty of Health, Medicine and Behavioural Sciences</p>
-                    <h6 class="mt-3">Research Topics:</h6>
-                    <ul>
-                        <li>Developing a frequency-aware diffusion framework that fuses multi-image frequency components and injects prompt-based attention maps for controllable, structure-style-semantic disentangled image synthesis (Targeted Venue A* conference)</li>
-                        <li>Latent-Based Continual Learning with Dual-Layered Distillation and a Streamlined U-Net for Efficient Text-to-Image Generation (Manuscript Under Review)</li>
-                        <li>Decentralized LoRA Augmented Transformer with Context-aware Multi-scale Feature Learning for Secured Eye Diagnosis (Manuscript Under Review)</li>
-                    </ul>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-date">2024</div>
-                    <h4>Research Assistant</h4>
-                    <h5>University of Aizu, Japan</h5>
-                    <p>Supervisor: Jungpli Shin, PhD</p>
-                    <p>Advance Machine Intelligence Research Lab (<a href="https://amirl.org/" target="_blank">https://amirl.org/</a>)</p>
-                    <h6 class="mt-3">Research Topic:</h6>
-                    <ul>
-                        <li>Percept-Diff: Innovations in Stable Diffusion for High-Fidelity IHC Image Generation in HER2 Breast Cancer Incorporating Perceptual Loss</li>
-                        <li>Published on 2024 International Conference on Innovation and Intelligence for Informatics, Computing, and Technologies (3ICT)</li>
-                    </ul>
-                </div>
-            </div>
+    <!-- EDUCATION -->
+    <section id="education">
+      <span class="section-tag reveal">// 02. Education</span>
+      <h2 class="section-title reveal">Academic Background</h2>
+      <div class="edu-card reveal">
+        <div class="edu-year">May 2024</div>
+        <div class="edu-degree">B.Sc. in Mechatronics Engineering</div>
+        <div class="edu-uni">Rajshahi University of Engineering and Technology (RUET), Bangladesh</div>
+        <div style="display:flex;gap:.8rem;flex-wrap:wrap;">
+          <span class="gpa-badge"><i class="fas fa-star"></i> CGPA: 3.44 / 4.00</span>
+          <span class="gpa-badge" style="background:rgba(255,107,157,.1);border-color:rgba(255,107,157,.25);color:var(--pink);"><i class="fas fa-arrow-trend-up"></i> Last 4 sem: 3.64 / 4.00</span>
         </div>
-    </section>
+      </div>
 
-    <!-- Professional Experience Section -->
-    <section id="experience" class="section">
-        <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">Jan 2023 – Mar 2023</div>
-                    <h4>Data Analyst And Business Analytics Intern</h4>
-                    <h5>The Sparks Foundation (Remote), Singapore</h5>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-date">Jun 2022 – Aug 2022</div>
-                    <h4>Intern</h4>
-                    <h5>Forbs Marshall, Dhaka, Bangladesh</h5>
-                </div>
-            </div>
-            
-            <h3 class="mt-5 mb-4">Awards & Honors</h3>
-            <div class="row">
-                <div class="col-md-6">
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-trophy me-2 text-warning"></i> <strong>Face The Case 3.0</strong> - IEEE CUET Student Branch (Top 10, 2023)</li>
-                        <li><i class="fas fa-trophy me-2 text-warning"></i> <strong>Cognizent 2.0</strong> - Ruet, IPE Club (Top 8, 2023)</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-certificate me-2 text-primary"></i> <strong>Internship Completion</strong> - Forbs Marshall (2023)</li>
-                        <li><i class="fas fa-certificate me-2 text-primary"></i> <strong>Data Science and Business Analytics Internship Completion</strong> - The Sparks Foundation (2023)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Publications Section -->
-    <section id="publications" class="section">
-      <div class="container">
-        <h2 class="section-title mb-4">Research Publications</h2>
-        
-        <ul class="list-unstyled">
-          
-          <!-- Publication 1 -->
-          <li class="d-flex align-items-start mb-4">
-            <img src="pdfs/Transformer.png" alt="Publication Preview" 
-                 class="me-3 rounded" style="width:80px; height:auto;">
-            <div>
-              <h5 class="mb-1">Decentralized LoRA Augmented Transformer with Context-aware Multi-scale Feature Learning for Secured Eye Diagnosis</h5>
-              <p class="mb-1"><small class="text-muted">Borno, M.N.A., Shovon, M.S.H., Sikder, M.D., Rimi, I.F., Alahmadi, T.J. and Moni, M.A., 2025</small></p>
-              <p class="mb-1">Knowledge-Based Systems</p>
-              <a href="https://doi.org/10.1016/j.knosys.2026.115948" class="btn btn-sm btn-primary" target="_blank">Link</a>
-            </div>
-          </li>
-          
-          <!-- Publication 2 -->
-          <li class="d-flex align-items-start mb-4">
-            <img src="pdfs/Kdc_diff.png" alt="Publication Preview" 
-                 class="me-3 rounded" style="width:80px; height:auto;">
-            <div>
-              <h5 class="mb-1">KDC-Diff: A Latent-Aware Diffusion Model with Knowledge Retention for Memory-Efficient Image Generation</h5>
-              <p class="mb-1"><small class="text-muted">Borno, M.N.A., Shovon, M.S.H., Al-Moisheer, A.S. and Moni, M.A., 2025</small></p>
-              <p class="mb-1">Currently Under Review at IEEE Open Journal for Computer Society</p>
-              <a href="https://arxiv.org/abs/2505.06995" class="btn btn-sm btn-primary" target="_blank">arxiv</a>
-            </div>
-          </li>
-          
-          
-          <!-- Publication 3 -->
-          <li class="d-flex align-items-start mb-4">
-            <img src="pdfs/Screenshot from 2025-07-05 10-59-03.png" alt="Publication Preview" 
-                 class="me-3 rounded" style="width:80px; height:auto;">
-            <div>
-              <h5 class="mb-1">Percept-Diff: Innovations in Stable Diffusion for High-Fidelity IHC Image Generation in HER2 Breast Cancer Incorporating Perceptual Loss</h5>
-              <p class="mb-1"><small class="text-muted">M. N. A. Borno, M. T. Raihan, A. Ahmed, M. S. H. Shovon, J. Shin and M. F. Mridha, 2024</small></p>
-              <p class="mb-1">3ICT 2024, Sakhir, Bahrain, pp. 520-526</p>
-              <a href="https://doi.org/10.1109/3ict64318.2024.10824425" class="btn btn-sm btn-primary" target="_blank">View Publication</a>
-            </div>
-          </li>
-          
-          <!-- Publication 4 -->
-          <li class="d-flex align-items-start mb-4">
-            <img src="pdfs/categorization.png" alt="Publication Preview" 
-                 class="me-3 rounded" style="width:80px; height:auto;">
-            <div>
-              <h5 class="mb-1">The Categorization of Surface Irregularities Presents on the Hot-Rolled Steel Strip...</h5>
-              <p class="mb-1"><small class="text-muted">Borno, N., Mazumder, D., and Ghosh, A., 2023</small></p>
-              <p class="mb-1">6th Industrial Engineering and Operations Management Bangladesh Conference</p>
-              <a href="https://index.ieomsociety.org/index.cfm/article/view/ID/13966" class="btn btn-sm btn-primary" target="_blank">View Publication</a>
-            </div>
-          </li>
-          
-        </ul>
+      <h3 style="font-family:var(--font-mono);font-size:.8rem;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin:3rem 0 1.5rem;" class="reveal">Certifications & Courses</h3>
+      <div class="courses-grid reveal">
+        <div class="course-item"><i class="fas fa-certificate"></i> Exploratory Data Analysis for ML (Coursera)</div>
+        <div class="course-item"><i class="fas fa-certificate"></i> Neural Networks & Deep Learning (DeepLearning.ai)</div>
+        <div class="course-item"><i class="fas fa-certificate"></i> TensorFlow for AI, ML & DL (Coursera)</div>
+        <div class="course-item"><i class="fas fa-certificate"></i> CNN in TensorFlow (DeepLearning.ai)</div>
+        <div class="course-item"><i class="fas fa-certificate"></i> Statistics for Data Science with Python (Coursera)</div>
+        <div class="course-item"><i class="fas fa-certificate"></i> Custom Models, Layers & Loss Functions (DeepLearning.ai)</div>
+        <div class="course-item"><i class="fas fa-certificate"></i> Generative AI (Coursera)</div>
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">Technical Competencies</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="skill-item">
-                        <div class="skill-name">Programming Languages</div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" style="width: 90%"></div>
-                        </div>
-                        <small>Python, C++, Java</small>
-                    </div>
-                    
-                    <div class="skill-item">
-                        <div class="skill-name">ML Libraries</div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" style="width: 85%"></div>
-                        </div>
-                        <small>Scikit-Learn, NumPy, Pandas, Matplotlib, Seaborn, Matlab</small>
-                    </div>
-                    
-                    <div class="skill-item">
-                        <div class="skill-name">Cloud Technologies</div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" style="width: 80%"></div>
-                        </div>
-                        <small>AWS, Azure, GCP, Miflow, Fast Api, Streamlit</small>
-                    </div>
-                </div>
-                
-                <div class="col-md-6">
-                    <div class="skill-item">
-                        <div class="skill-name">Computer Vision</div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" style="width: 88%"></div>
-                        </div>
-                        <small>Diffusers, Transformers, PIL, OpenCV, CNN, Generative AI, Object Detection, Segmentation</small>
-                    </div>
-                    
-                    <div class="skill-item">
-                        <div class="skill-name">Tools & Others</div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" style="width: 85%"></div>
-                        </div>
-                        <small>Git, GitHub, LaTeX, Microsoft Office, Adobe Illustrator</small>
-                    </div>
-                </div>
-            </div>
+    <div class="divider"></div>
+
+    <!-- RESEARCH -->
+    <section id="research">
+      <span class="section-tag reveal">// 03. Research Experience</span>
+      <h2 class="section-title reveal">Research Journey</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="t-date">Current · 2024 – Present</div>
+          <div class="t-title">Research Assistant</div>
+          <div class="t-org">University of Queensland, Australia</div>
+          <div class="t-supervisor">Supervisor: Dr. Mohammad Ali Moni · Faculty of Health, Medicine and Behavioural Sciences</div>
+          <ul class="t-topics">
+            <li>Frequency-aware diffusion framework fusing multi-image frequency components with prompt-based attention maps for controllable, structure-style-semantic disentangled image synthesis (targeting A* conference)</li>
+            <li>KDC-Diff: Latent-aware continual learning with dual-layered distillation and streamlined U-Net for memory-efficient text-to-image generation (Under Review)</li>
+            <li>Decentralized LoRA Augmented Transformer with context-aware multi-scale feature learning for secured eye diagnosis (Under Review)</li>
+          </ul>
         </div>
-    </section>
-    <section id="gallery" class="section">
-        <div class="container">
-            <h2 class="section-title">Certificate Gallery</h2>
-            <div class="row g-3">
-                <!-- Image 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="gallery-item">
-                        <img src="pdfs/Screenshot from 2025-07-05 18-08-33.png" alt="Project 1" class="img-fluid rounded">
-                        <div class="gallery-caption">Certificate of Participation at 3ICT, 2024</div>
-                    </div>
-                </div>
-                <!-- Image 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="gallery-item">
-                        <img src="pdfs/cognigent.jpeg" alt="Project 2" class="img-fluid rounded">
-                        <div class="gallery-caption">Cognigent 2.0</div>
-                    </div>
-                </div>
-                <!-- Image 3 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="gallery-item">
-                        <img src="pdfs/Ioem.jpeg" alt="Project 3" class="img-fluid rounded">
-                        <div class="gallery-caption">Certificate of Participation at IEOM</div>
-                    </div>
-                </div>
-                <!-- Image 4 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="gallery-item">
-                        <img src="pdfs/Screenshot from 2025-07-05 18-08-09.png" alt="Project 4" class="img-fluid rounded">
-                        <div class="gallery-caption">Exploratory Data Analysis for Machine Learning</div>
-                    </div>
-                </div>
-                <!-- Image 5 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="gallery-item">
-                        <img src="pdfs/Screenshot from 2025-07-05 18-07-35.png" alt="Project 5" class="img-fluid rounded">
-                        <div class="gallery-caption">Neural Networks and Deep Learning</div>
-                    </div>
-                </div>
-                <!-- Image 6 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="gallery-item">
-                        <img src="pdfs/Screenshot from 2025-07-05 18-07-59.png" alt="Project 6" class="img-fluid rounded">
-                        <div class="gallery-caption">Convolutional Neural Networks in Tensorflow</div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="gallery-item">
-                        <img src="pdfs/Screenshot from 2025-07-05 18-07-48.png" alt="Project 6" class="img-fluid rounded">
-                        <div class="gallery-caption">Introduction to TensorFlow for AI, ML and Deep Learning</div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="gallery-item">
-                        <img src="pdfs/Screenshot from 2025-07-05 18-08-19.png" alt="Project 6" class="img-fluid rounded">
-                        <div class="gallery-caption">Custom Models, Layers and Loss Functions with TensorFlow</div>
-                    </div>
-                </div>
-            </div>
+        <div class="timeline-item reveal">
+          <div class="t-date">2024</div>
+          <div class="t-title">Research Assistant</div>
+          <div class="t-org">University of Aizu, Japan</div>
+          <div class="t-supervisor">Supervisor: Jungpli Shin, PhD · Advanced Machine Intelligence Research Lab (AMIRL)</div>
+          <ul class="t-topics">
+            <li>Percept-Diff: Innovations in Stable Diffusion for High-Fidelity IHC Image Generation in HER2 Breast Cancer incorporating Perceptual Loss — Published at 3ICT 2024, Bahrain</li>
+          </ul>
         </div>
-    </section>
-    <!-- Interests Section -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Activities & Interests</h2>
-            <div class="text-center">
-                <span class="interest-item"><i class="fas fa-plane me-1"></i> Traveling</span>
-                <span class="interest-item"><i class="fas fa-film me-1"></i> Movies</span>
-                <span class="interest-item"><i class="fas fa-music me-1"></i> Singing</span>
-                <span class="interest-item"><i class="fas fa-camera me-1"></i> Photography</span>
-                <span class="interest-item"><i class="fas fa-book me-1"></i> Books</span>
-            </div>
+        <div class="timeline-item reveal">
+          <div class="t-date">Jan – Mar 2023</div>
+          <div class="t-title">Data Analyst & Business Analytics Intern</div>
+          <div class="t-org">The Sparks Foundation · Remote, Singapore</div>
         </div>
+        <div class="timeline-item reveal">
+          <div class="t-date">Jun – Aug 2022</div>
+          <div class="t-title">Engineering Intern</div>
+          <div class="t-org">Forbs Marshall · Dhaka, Bangladesh</div>
+        </div>
+      </div>
+
+      <h3 style="font-family:var(--font-mono);font-size:.8rem;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin:1rem 0 1.5rem;" class="reveal">Awards & Honors</h3>
+      <div class="awards-grid">
+        <div class="award-card reveal"><div class="award-icon">🏆</div><div class="award-name">Face The Case 3.0</div><div class="award-org">IEEE CUET Student Branch · Top 10, 2023</div></div>
+        <div class="award-card reveal reveal-delay-1"><div class="award-icon">🏆</div><div class="award-name">Cognizent 2.0</div><div class="award-org">RUET IPE Club · Top 8, 2023</div></div>
+        <div class="award-card reveal reveal-delay-2"><div class="award-icon">📜</div><div class="award-name">Internship Certificate</div><div class="award-org">Forbs Marshall, 2023</div></div>
+        <div class="award-card reveal reveal-delay-3"><div class="award-icon">📜</div><div class="award-name">DS & Business Analytics Certificate</div><div class="award-org">The Sparks Foundation, 2023</div></div>
+      </div>
     </section>
 
-    <!-- References Section -->
-    <section id="references" class="section">
-        <div class="container">
-            <h2 class="section-title">References</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Dr. Mohammad Ali Moni</h5>
-                            <p class="card-text">School of Health and Rehabilitation Sciences<br>
-                            Faculty of Health, Medicine and Behavioural Sciences<br>
-                            The University of Queensland<br>
-                            308 Queen St, Brisbane City, QLD 4000, Queensland, Australia</p>
-                            <p class="card-text"><i class="fas fa-envelope me-1"></i> m.moni@uq.edu.au</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Md. Faisal Rahman Badal</h5>
-                            <p class="card-text">Assistant Professor<br>
-                            Department of Mechatronics Engineering<br>
-                            Rajshahi University of Engineering & Technology (RUET)<br>
-                            Rajshahi - 6204, Bangladesh</p>
-                            <p class="card-text"><i class="fas fa-envelope me-1"></i> faisalrahman@mte.ruet.ac.bd</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="divider"></div>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+      <span class="section-tag reveal">// 04. Publications</span>
+      <h2 class="section-title reveal">Research Output</h2>
+      <div class="pub-grid">
+
+        <div class="pub-card reveal">
+          <div class="pub-num">01</div>
+          <div>
+            <div class="pub-title">Decentralized LoRA Augmented Transformer with Context-aware Multi-scale Feature Learning for Secured Eye Diagnosis</div>
+            <div class="pub-authors">Borno, M.N.A., Shovon, M.S.H., Sikder, M.D., Rimi, I.F., Alahmadi, T.J. and Moni, M.A., 2025</div>
+            <div class="pub-venue">Knowledge-Based Systems</div>
+            <span class="pub-badge badge-published"><i class="fas fa-circle-check"></i> Published</span>
+            <a class="pub-link" href="https://doi.org/10.1016/j.knosys.2026.115948" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+          </div>
         </div>
+
+        <div class="pub-card reveal">
+          <div class="pub-num">02</div>
+          <div>
+            <div class="pub-title">KDC-Diff: A Latent-Aware Diffusion Model with Knowledge Retention for Memory-Efficient Image Generation</div>
+            <div class="pub-authors">Borno, M.N.A., Shovon, M.S.H., Al-Moisheer, A.S. and Moni, M.A., 2025</div>
+            <div class="pub-venue">IEEE Open Journal for Computer Society (Under Review)</div>
+            <span class="pub-badge badge-review"><i class="fas fa-clock"></i> Under Review</span>
+            <a class="pub-link" href="https://arxiv.org/abs/2505.06995" target="_blank"><i class="fas fa-external-link-alt"></i> arXiv</a>
+          </div>
+        </div>
+
+        <div class="pub-card reveal">
+          <div class="pub-num">03</div>
+          <div>
+            <div class="pub-title">Percept-Diff: Innovations in Stable Diffusion for High-Fidelity IHC Image Generation in HER2 Breast Cancer Incorporating Perceptual Loss</div>
+            <div class="pub-authors">Borno, M.N.A., Raihan, M.T., Ahmed, A., Shovon, M.S.H., Shin, J. and Mridha, M.F., 2024</div>
+            <div class="pub-venue">3ICT 2024, Sakhir, Bahrain — pp. 520–526</div>
+            <span class="pub-badge badge-published"><i class="fas fa-circle-check"></i> Published</span>
+            <a class="pub-link" href="https://doi.org/10.1109/3ict64318.2024.10824425" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE</a>
+          </div>
+        </div>
+
+        <div class="pub-card reveal">
+          <div class="pub-num">04</div>
+          <div>
+            <div class="pub-title">The Categorization of Surface Irregularities Presents on the Hot-Rolled Steel Strip</div>
+            <div class="pub-authors">Borno, N., Mazumder, D., and Ghosh, A., 2023</div>
+            <div class="pub-venue">6th Industrial Engineering and Operations Management Bangladesh Conference (IEOM)</div>
+            <span class="pub-badge badge-published"><i class="fas fa-circle-check"></i> Published</span>
+            <a class="pub-link" href="https://index.ieomsociety.org/index.cfm/article/view/ID/13966" target="_blank"><i class="fas fa-external-link-alt"></i> View</a>
+          </div>
+        </div>
+
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="row">
-                <div class="col-lg-6">
-                    <form>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Your Name">
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Your Email">
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Subject">
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-                <div class="col-lg-6">
-                    <div class="p-4">
-                        <h4>Contact Information</h4>
-                        <p><i class="fas fa-phone me-2"></i> +8801860460298</p>
-                        <p><i class="fas fa-envelope me-2"></i> naimur.ruet@gmail.com</p>
-                        <p><i class="fas fa-map-marker-alt me-2"></i> Rajshahi, Bangladesh</p>
-                        
-                        <div class="mt-4">
-                            <h4>Follow Me</h4>
-                            <div class="social-icons">
-                                <a href="https://linkedin.com/in/naimurborno" target="_blank"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://github.com/naimurborno" target="_blank"><i class="fab fa-github"></i></a>
-                                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="divider"></div>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <span class="section-tag reveal">// 05. Skills</span>
+      <h2 class="section-title reveal">Technical Competencies</h2>
+      <div class="skills-outer">
+        <div class="reveal">
+          <div class="skill-group-title">Core &amp; ML</div>
+          <div class="skill-row">
+            <div class="skill-header"><span class="skill-name">Python &amp; Deep Learning</span><span class="skill-pct">92%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+            <div class="tech-tags"><span class="tech-tag">PyTorch</span><span class="tech-tag">TensorFlow</span><span class="tech-tag">Scikit-learn</span><span class="tech-tag">NumPy</span><span class="tech-tag">Pandas</span></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-header"><span class="skill-name">Computer Vision</span><span class="skill-pct">88%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            <div class="tech-tags"><span class="tech-tag">Diffusers</span><span class="tech-tag">Transformers</span><span class="tech-tag">OpenCV</span><span class="tech-tag">PIL</span></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-header"><span class="skill-name">Generative AI</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            <div class="tech-tags"><span class="tech-tag">Stable Diffusion</span><span class="tech-tag">LoRA</span><span class="tech-tag">DDPM</span><span class="tech-tag">GANs</span></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-header"><span class="skill-name">Other Languages</span><span class="skill-pct">75%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            <div class="tech-tags"><span class="tech-tag">C++</span><span class="tech-tag">Java</span><span class="tech-tag">MATLAB</span></div>
+          </div>
         </div>
+        <div class="reveal reveal-delay-2">
+          <div class="skill-group-title">Tools &amp; Platforms</div>
+          <div class="skill-row">
+            <div class="skill-header"><span class="skill-name">Cloud & MLOps</span><span class="skill-pct">80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            <div class="tech-tags"><span class="tech-tag">AWS</span><span class="tech-tag">GCP</span><span class="tech-tag">Azure</span><span class="tech-tag">MLflow</span><span class="tech-tag">FastAPI</span></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-header"><span class="skill-name">Dev Tools</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            <div class="tech-tags"><span class="tech-tag">Git</span><span class="tech-tag">GitHub</span><span class="tech-tag">LaTeX</span><span class="tech-tag">Streamlit</span></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-header"><span class="skill-name">Research Techniques</span><span class="skill-pct">82%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            <div class="tech-tags"><span class="tech-tag">Continual Learning</span><span class="tech-tag">Knowledge Distillation</span><span class="tech-tag">Federated Learning</span></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-header"><span class="skill-name">Design & Visualization</span><span class="skill-pct">72%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+            <div class="tech-tags"><span class="tech-tag">Adobe Illustrator</span><span class="tech-tag">Matplotlib</span><span class="tech-tag">Seaborn</span></div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="container">
-            <p>&copy; 2024 MD. Naimur Asif Borno. All Rights Reserved.</p>
-            <div class="social-icons">
-                <a href="https://linkedin.com/in/naimurborno" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/naimurborno" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-            </div>
-        </div>
-    </footer>
+    <div class="divider"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- CONTACT -->
+    <section id="contact">
+      <span class="section-tag reveal">// 06. Contact</span>
+      <h2 class="section-title reveal">Get In Touch</h2>
+      <div class="contact-grid">
+        <div class="reveal">
+          <p style="color:var(--muted);margin-bottom:2rem;font-size:1rem;">Whether you're a professor looking for a PhD student, a collaborator with an interesting problem, or just want to talk research — my inbox is always open.</p>
+          <div class="contact-info">
+            <div class="contact-item"><i class="fas fa-envelope"></i><span>naimur.ruet@gmail.com</span></div>
+            <div class="contact-item"><i class="fas fa-phone"></i><span>+880 1860-460298</span></div>
+            <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>Rajshahi, Bangladesh</span></div>
+          </div>
+          <div class="social-row">
+            <a class="social-btn" href="https://linkedin.com/in/naimurborno" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a class="social-btn" href="https://github.com/naimurborno" target="_blank"><i class="fab fa-github"></i></a>
+            <a class="social-btn" href="https://scholar.google.com/citations?user=6UJCdmkAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+          </div>
+          <div style="margin-top:3rem;">
+            <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--muted);margin-bottom:1.2rem;letter-spacing:.1em;text-transform:uppercase;">References</div>
+            <div style="background:var(--bg3);border:1px solid var(--border);border-radius:.8rem;padding:1.2rem;margin-bottom:1rem;">
+              <div style="font-weight:600;margin-bottom:.3rem;">Dr. Mohammad Ali Moni</div>
+              <div style="font-size:.82rem;color:var(--muted);">University of Queensland, Australia · m.moni@uq.edu.au</div>
+            </div>
+            <div style="background:var(--bg3);border:1px solid var(--border);border-radius:.8rem;padding:1.2rem;">
+              <div style="font-weight:600;margin-bottom:.3rem;">Md. Faisal Rahman Badal</div>
+              <div style="font-size:.82rem;color:var(--muted);">Asst. Professor, RUET · faisalrahman@mte.ruet.ac.bd</div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form reveal reveal-delay-2">
+          <input type="text" placeholder="Your Name">
+          <input type="email" placeholder="Your Email">
+          <input type="text" placeholder="Subject">
+          <textarea placeholder="Your Message"></textarea>
+          <button class="btn-send">SEND MESSAGE <i class="fas fa-arrow-right" style="margin-left:.5rem;"></i></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 <span>MD. Naimur Asif Borno</span>. Built with precision. All rights reserved.</p>
+  </footer>
+
+  <script>
+    /* ── CURSOR ── */
+    const cursor = document.getElementById('cursor');
+    const ring = document.getElementById('cursor-ring');
+    let mx=0,my=0,rx=0,ry=0;
+    document.addEventListener('mousemove', e => { mx=e.clientX; my=e.clientY; cursor.style.left=mx-5+'px'; cursor.style.top=my-5+'px'; });
+    function animRing(){ rx+=(mx-rx)*.1; ry+=(my-ry)*.1; ring.style.left=rx-18+'px'; ring.style.top=ry-18+'px'; requestAnimationFrame(animRing); }
+    animRing();
+    document.querySelectorAll('a,button').forEach(el => {
+      el.addEventListener('mouseenter',()=>{ cursor.style.transform='scale(2)'; ring.style.width='56px'; ring.style.height='56px'; });
+      el.addEventListener('mouseleave',()=>{ cursor.style.transform='scale(1)'; ring.style.width='36px'; ring.style.height='36px'; });
+    });
+
+    /* ── CANVAS NEURAL NET ── */
+    const canvas = document.getElementById('bg-canvas');
+    const ctx = canvas.getContext('2d');
+    let W,H,nodes=[];
+    function resize(){ W=canvas.width=window.innerWidth; H=canvas.height=window.innerHeight; }
+    resize(); window.addEventListener('resize',resize);
+    class Node {
+      constructor(){ this.x=Math.random()*W; this.y=Math.random()*H; this.vx=(Math.random()-.5)*.3; this.vy=(Math.random()-.5)*.3; this.r=Math.random()*2+1; }
+      update(){ this.x+=this.vx; this.y+=this.vy; if(this.x<0||this.x>W)this.vx*=-1; if(this.y<0||this.y>H)this.vy*=-1; }
+      draw(){ ctx.beginPath(); ctx.arc(this.x,this.y,this.r,0,Math.PI*2); ctx.fillStyle='rgba(0,229,255,.6)'; ctx.fill(); }
+    }
+    for(let i=0;i<90;i++) nodes.push(new Node());
+    function drawCanvas(){
+      ctx.clearRect(0,0,W,H);
+      nodes.forEach(n=>n.update());
+      for(let i=0;i<nodes.length;i++) for(let j=i+1;j<nodes.length;j++){
+        let dx=nodes[i].x-nodes[j].x, dy=nodes[i].y-nodes[j].y, dist=Math.sqrt(dx*dx+dy*dy);
+        if(dist<140){ ctx.beginPath(); ctx.moveTo(nodes[i].x,nodes[i].y); ctx.lineTo(nodes[j].x,nodes[j].y); ctx.strokeStyle=`rgba(0,229,255,${.18*(1-dist/140)})`; ctx.lineWidth=.6; ctx.stroke(); }
+      }
+      nodes.forEach(n=>n.draw());
+      requestAnimationFrame(drawCanvas);
+    }
+    drawCanvas();
+
+    /* ── COUNTER ANIMATION ── */
+    function animCount(el){
+      const target=+el.dataset.target, suffix=el.dataset.suffix||'';
+      let start=0; const dur=1800;
+      const t0=performance.now();
+      function step(t){ let p=Math.min((t-t0)/dur,1); let ease=1-Math.pow(1-p,4); el.textContent=Math.round(start+(target-start)*ease)+suffix; if(p<1)requestAnimationFrame(step); }
+      requestAnimationFrame(step);
+    }
+    const counters=document.querySelectorAll('.stat-num');
+    let counted=false;
+    function tryCount(){ if(counted)return; const r=counters[0].getBoundingClientRect(); if(r.top<window.innerHeight){ counted=true; counters.forEach(animCount); } }
+    window.addEventListener('scroll',tryCount); tryCount();
+
+    /* ── SCROLL REVEAL ── */
+    const reveals=document.querySelectorAll('.reveal');
+    const ro=new IntersectionObserver(entries=>{ entries.forEach(e=>{ if(e.isIntersecting)e.target.classList.add('visible'); }); },{threshold:.12});
+    reveals.forEach(el=>ro.observe(el));
+
+    /* ── SKILL BARS ── */
+    const fills=document.querySelectorAll('.skill-fill');
+    const so=new IntersectionObserver(entries=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.style.width=e.target.dataset.width+'%'; so.unobserve(e.target); } }); },{threshold:.5});
+    fills.forEach(el=>so.observe(el));
+  </script>
 </body>
 </html>
